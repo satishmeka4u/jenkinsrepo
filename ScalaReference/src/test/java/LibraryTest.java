@@ -9,4 +9,10 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+    
+    @Test
+    public void testSum() {
+    	Library classUnderTest = new Library();
+    	assertEquals(10, classUnderTest.sum(5, 15));
+    }
 }
